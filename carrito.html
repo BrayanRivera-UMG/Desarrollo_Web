@@ -1,22 +1,279 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Carrito de Compras</title>
-    </head>
-    <body>
-        <h1>Carrito de Compras</h1>
-        <table border="1" cellpadding="5" cellspacing="5" >
+
+<head>
+    <title>Carrito de Compras</title>
+</head>
+
+<body>
+
+    <h1>Carrito de Compras</h1>
+
+    <table border="1" cellpadding="5" cellspacing="5">
+        <tr>
             <th><a href="index.html">Menu Principal</a></th>
+            <th><a href="productos.html">Productos</a></th>
             <th><a href="inicio_sesion.html">Inicio de Sesión</a></th>
             <th><a href="registro_usuario.html">Registro de Usuarios</a></th>
-            <th><a href="productos.html">Productos</a></th>
-            <th><a href="detalle_producto.html">Detalle del Producto</a></th>
+            <th><a href="carrito.html">Carrito de Compras</a></th>
+        </tr>
+    </table>
+
+    <br>
+
+    <h2>Productos Agregados</h2>
+
+    <table border="1" cellpadding="6" cellspacing="5" width="100%">
+
+        <tr>
+
+            <th>Producto</th>
+            <th>Categoría</th>
+            <th>Precio Unitario</th>
+            <th>Cantidad</th>
+            <th>Subtotal</th>
+
+        </tr>
+
+        <tr>
+
+            <td>ASUS VivoBook 15</td>
+            <td>Laptop</td>
+            <td>Q7,499.00</td>
+            <td>
+                <input type="number" value="1" min="1">
+            </td>
+            <td>Q7,499.00</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Logitech G Pro X</td>
+            <td>Teclado</td>
+            <td>Q1,299.00</td>
+            <td>
+                <input type="number" value="1" min="1">
+            </td>
+            <td>Q1,299.00</td>
+
+        </tr>
+
+        <tr>
+
+            <td>Logitech MX Master 3S</td>
+            <td>Mouse Inalambrico</td>
+            <td>Q699.00</td>
+            <td>
+                <input type="number" value="1" min="1">
+            </td>
+            <td>Q699.00</td>
+
+        </tr>
+
+    </table>
+
+    <br>
+
+    <table border="1" cellpadding="6" cellspacing="5" width="40%" align="right">
+
+        <tr>
+
+            <th colspan="2">
+
+                Resumen de Compra
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+            <td>Subtotal</td>
+
+            <td>Q9,497.00</td>
+
+        </tr>
+
+        <tr>
+
+            <td>IVA</td>
+
+            <td>Q1,139.64</td>
+
+        </tr>
+
+        <tr>
+
+            <td><b>Total</b></td>
+
+            <td><b>Q10,636.64</b></td>
+
+        </tr>
+
+    </table>
+
+    <br><br><br><br><br><br><br><br>
+
+    <h2>Datos para la Compra</h2>
+
+    <form>
+
+        <table border="1" cellpadding="6" cellspacing="5" width="70%">
+
+            <tr>
+
+                <th colspan="2">
+
+                    Información del Cliente
+
+                </th>
+
+            </tr>
+
+            <tr>
+
+                <td>Nombre Completo</td>
+
+                <td>
+
+                    <input type="text" size="40">
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>Correo Electrónico</td>
+
+                <td>
+
+                    <input type="email" size="40">
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>Teléfono</td>
+
+                <td>
+
+                    <input type="tel">
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>Dirección de Entrega</td>
+
+                <td>
+
+                    <textarea rows="4" cols="40"></textarea>
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>Método de Pago</td>
+
+                <td>
+
+                    <input type="radio" name="pago"> Tarjeta de Crédito
+
+                    <br>
+
+                    <input type="radio" name="pago"> Tarjeta de Débito
+
+                    <br>
+
+                    <input type="radio" name="pago"> Transferencia Bancaria
+
+                    <br>
+
+                    <input type="radio" name="pago"> Pago Contra Entrega
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>Comentarios</td>
+
+                <td>
+
+                    <textarea rows="3" cols="40"></textarea>
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td colspan="2" align="center">
+
+                    <input type="submit" value="Confirmar Compra">
+
+                    <input type="reset" value="Vaciar Formulario">
+
+                </td>
+
+            </tr>
+
         </table>
-        <br>
-        <table border="1" cellpadding="5" cellspacing="5">
-            
-        </table>
-        <br>
-        <footer>Derechos Reservados Brayan Kenet Rivera Quinilla 9490-23-2835 &copy; 2026</footer>
-    </body>
+
+    </form>
+
+    <br>
+
+    <table border="1" cellpadding="5" cellspacing="5" width="70%">
+
+        <tr>
+
+            <th>
+
+                Información Importante
+
+            </th>
+
+        </tr>
+
+        <tr>
+
+            <td>
+
+                <ul>
+
+                    <li>Los precios incluyen IVA.</li>
+
+                    <li>Los productos están sujetos a disponibilidad.</li>
+
+                    <li>El envío se coordinará después de confirmar la compra.</li>
+
+                    <li>La garantía depende del fabricante de cada producto.</li>
+
+                    <li>Este carrito corresponde a un prototipo desarrollado únicamente con HTML.</li>
+
+                </ul>
+
+            </td>
+
+        </tr>
+
+    </table>
+
+    <br>
+
+    <footer>
+        Derechos Reservados Brayan Kenet Rivera Quinilla
+        9490-23-2835 &copy; 2026
+    </footer>
+</body>
 </html>
