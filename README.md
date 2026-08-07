@@ -19,7 +19,7 @@ se incorporo mediante un archivo externo `script,js` para agregar interactividad
 Para implementar estas funcionalidades se utilizaron elementos de manipulacion del DOM como `querySelector`, `getElementById`, `addEventListener` y `classList`, permitiendo responder a las acciones realizadas por el usuario sin nececesidad de recargar la pagina
 
 # Link de Netlify
-
+- https://dwhojatrabajo3.netlify.app/
 
 # Estudiante
 - Nombre
