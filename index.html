@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Excursion al Lago de Atitlan</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Excursion al Lago de Atitlan</h1>
+            <p>Bienvenidos a esta pagina donde podran encontrar informacion sobre la excursion al Lago de Atitlan</p>
+        </header>
+        <table class="menu">
+            <tr>
+                <th><a href="#indice">Indice</a></th>
+                <th><a href="#descripcion">Descripcion</a></th>
+                <th><a href="#imagenes">Imagenes de Referencia</a></th>
+                <th><a href="#itinerario">Itinerario</a></th>
+                <th><a href="#cotizacion">Cotizacion</a></th>
+                <th><a href="#actividades">Actividades</a></th>
+                <th><a href="#reservacion">Reservacion</a></th>
+                <th><a href="#testimonios">Opiniones</a></th>
+            </tr>
+        </table>
+        <br>
+        <table id="indice" class="seccion">
+            <tr>
+                <th>INDICE</th>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li>Descripcion</li>
+                        <li>Imagenes de Referencia</li>
+                        <li>Itinerario de la excursion</li>
+                        <li>Actividades</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <table id="descripcion" class="seccion">
+            <tr>
+                <th>DESCIPCION</th>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Lago de Atitlan</h3>
+                    <p><strong>Ubicación:</strong> Guatemala, Solola</p>
+                    <p><strong>Descripción:</strong></p>
+                    <p>El lago de Atitlan es un lago situado en el altiplano guatemalteco, en el departamento de Solola. es considerado uno de los lagos mas bellos del mundo y es un lugar turistico popular debido a su impresionante paisaje, rodeado de volcanes y pueblos pintorescos.</p>
+                    <p>El lago tiene una profundidad maxima de aproximadamente 340 metros y una superficie de alrededor de 130 km². Ademas, es hogar de diversas especies de flora y faunam asi como de comunidades indigenas que mantienen vivas sus tradiciones y cultura.</p>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <table id="imagenes" class="seccion">
+            <tr>
+                <th colspan="4">IMAGENES DE REFERENCIA</th>
+            </tr>
+            <tr>
+                <td>
+                    <img class="foto" src="./imagenes/lago_de_atitlan_1.jpg" alt="Lago de Atitlan" data-title="Vista panoramica del Lago de Atitlan">
+                </td>
+                <td>
+                    <img class="foto" src="./imagenes/lago_de_atitlan_2.jpg" alt="Lago de Atitlan" data-title="Vista del muelle del Lago de Atitlan">
+                </td>
+                <td>
+                    <img class="foto" src="./imagenes/lago_de_atitlan_3.jpg" alt="Lago de Atitlan" data-title="Paisaje del Lago de Atitlan">
+                </td>
+                <td>
+                    <img class="foto" src="./imagenes/lago_de_atitlan_4.jpg" alt="Lago de Atitlan" data-title="Vista de escalada cerca del Lago de Atitlan">
+                </td>
+            </tr>
+        </table>
+        <br>
+        <div id="modal" class="modal">
+            <div class="modal-contenido">
+                <button id="cerrarModal" class="cerrar-modal">&times;</button>
+                <img id="imagenModal" src="" alt="">
+                <h2 id="tituloModal"></h2>
+            </div>
+        </div>
+        <br>
+        <table id="itinerario" class="seccion">
+            <tr>
+                <th colspan="4">ITINERARIO DE LA EXCURSION</th>
+            </tr>
+            <tr>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                    <th>Actividad</th>
+                    <th>Lugar</th>
+                </tr>
+                <tr>
+                    <td>10/08/26</td>
+                    <td>7:00 AM</td>
+                    <td>Salida</td>
+                    <td>Ciudad</td>
+                </tr>
+                <tr>
+                    <td>10/08/26</td>
+                    <td>10:00 AM</td>
+                    <td>Llegada</td>
+                    <td>Panajachel</td>
+                </tr>
+                <tr>
+                    <td>10/08/26</td>
+                    <td>11:00 AM</td>
+                    <td>Recorrido en lancha</td>
+                    <td>Lago</td>
+                </tr>
+                <tr>
+                    <td>10/08/26</td>
+                    <td>1:00 PM</td>
+                    <td>Almuerzo</td>
+                    <td>Restaurante</td>
+                </tr>
+                <tr>
+                    <td>10/08/26</td>
+                    <td>3:00 PM</td>
+                    <td>Visita a San Juan</td>
+                    <td>San Juan</td>
+                </tr>
+                <tr>
+                    <td>10/08/26</td>
+                    <td>6:00 PM</td>
+                    <td>Regreso</td>
+                    <td>Ciudad</td>
+                </tr>
+        </table>
+        <br>
+        <table id="cotizacion" class="seccion">
+            <tr>
+                <th>COTIZACION DE LA EXCURSION</th>
+            </tr>
+            <tr>
+                <td>
+                    <form id="formCotizacion">
+                        <label for="asistentes">Numero de Asistentes:</label>
+                        <input type="number" id="asistentes" min="1" required>
+                        <br><br>
+                        <label for="paquete">Tipo de paquete:</label>
+                        <select id="paquete">
+                            <option value="0">Seleccione un paquete</option>
+                            <option value="150">Tour Basico - Q150 por persona</option>
+                            <option value="250">Tour Completo - Q250 por persona</option>
+                            <option value="350">Tour Premium - Q350 por persona</option>
+                        </select>
+                        <br><br>
+                        <p>Servicios adicionales:</p>
+                        <label><input type="checkbox" name="servicio" value="50"> Transporte - Q50 por persona</label>
+                        <br>
+                        <label><input type="checkbox" name="servicio" value="75">Alimentacion - Q75 por persona</label>
+                        <br>
+                        <label><input type="checkbox" name="servicio" value="40">Equipo - Q40 por persona</label>
+                        <br><br>
+                        <button type="submit">Calcular Total</button>
+                        <h3 id="resultadoCotizacion"></h3>
+                    </form>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <table id="actividades" class="seccion">
+            <tr>
+                <th colspan="4">ACTIVIDADES</th>
+            </tr>
+            <tr>
+                <td>
+                    <label for="buscadorActividades">Buscar actividad</label>
+                    <input type="text" id="buscadorActividades" placeholder="Escribe una actividad...">
+                    <ul id="listaActividades">
+                        <li>Paseo en lancha</li>
+                        <li>Fotografia y observacion de aves</li>
+                        <li>Senderismo y exploracion de la naturaleza</li>
+                        <li>Comprar artesanias</li>
+                        <li>Visitar pueblos cercanos</li>
+                        <li>Observar el atardecer</li>
+                        <li>Degustar comida tipica</li>
+                        <li>Kayak</li>
+                        <li>Natacion</li>
+                        <li>Camping</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <table id="reservacion" class="seccion">
+            <tr>
+                <th>RESERVACION / CONTACTO</th>
+            </tr>
+            <tr>
+                <td>
+                    <form id="formReservacion">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" required>
+                        <br><br>
+                        <label for="correo">Correo electronico:</label>
+                        <input type="email" id="correo" required>
+                        <br><br>
+                        <label for="personas">Numero de Personas</label>
+                        <input type="number" id="personas" min="1" required>
+                        <br><br>
+                        <button type="submit">Enviar Solicitud</button>
+                    </form>
+                    <p id="mensajeReservacion"></p>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <table id="testimonios" class="seccion">
+            <tr>
+                <th>OPINIONES DE NUESTROS VISITANTES</th>
+            </tr>
+            <tr>
+                <td>
+                    <div id="testimonio">
+                        <h3 id="nombreTestimonio"></h3>
+                        <p id="comentarioTestimonio"></p>
+                    </div>
+                    <button id="nuevoTestimonio">Ver otra opinion</button>
+                </td>
+            </tr>
+        </table>
+        <br>
+    <footer><p>Derechos reservados Brayan Kenet Rivera Quinilla 9490-23-2835 &copy; 2026</p></footer>
+    </body>
+</html>
