@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Card, Form, Button, Row, Col, Alert } from 'react-bootstrap';
+import { Container, Card, Form, Button, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const InicioSesion = () => {
@@ -34,7 +34,9 @@ const InicioSesion = () => {
                 </div>
               </Form>
               <div className="text-center mt-3">
-                <a href="#" className="text-muted">¿Olvidó su contraseña?</a>
+                <Button variant="link" type="button" className="text-muted p-0">
+                  ¿Olvidó su contraseña?
+                </Button>
               </div>
               <hr />
               <div className="text-center">
