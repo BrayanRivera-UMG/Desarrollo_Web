@@ -37,8 +37,9 @@ El proyecto está organizado en componentes reutilizables que facilitan el mante
 
 ## Enlace de Visualización
 
-Puedes ver la versión en funcionamiento del proyecto en:
-[https://dwtarea1.netlify.app/](https://dwtarea1.netlify.app/)
+Link Netlify
+
+https://dwtiendatecnologicatarea2.netlify.app/
 
 ## Estudiante
 
