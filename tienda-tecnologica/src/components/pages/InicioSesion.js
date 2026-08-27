@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Card, Form, Button, Row, Col } from 'react-bootstrap'; // ← Eliminé "Alert"
+import { Container, Card, Form, Button, Row, Col } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 
 const InicioSesion = () => {
@@ -20,11 +20,11 @@ const InicioSesion = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!formData.email || !formData.password) {
-      setError('⚠️ Por favor completa todos los campos.');
+      setError('Por favor completa todos los campos.');
       return;
     }
     setError('');
-    alert(`✅ Bienvenido!\nEmail: ${formData.email}`);
+    alert(`Bienvenido!\nEmail: ${formData.email}`);
     navigate('/');
   };
 
@@ -82,7 +82,7 @@ const InicioSesion = () => {
               </Form>
               
               <div className="text-center mt-3">
-                {/* ✅ Corregido: href válido */}
+                {/* Corregido: href válido */}
                 <a href="/recuperar-contrasena" className="text-muted">
                   ¿Olvidó su contraseña?
                 </a>
