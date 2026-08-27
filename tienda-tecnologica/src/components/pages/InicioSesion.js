@@ -104,11 +104,11 @@ const InicioSesion = () => {
             </Card.Header>
             <Card.Body>
               <ul className="mb-0">
-                <li>🛒 Comprar productos fácilmente.</li>
-                <li>❤️ Guardar productos favoritos.</li>
-                <li>📜 Consultar el historial de compras.</li>
-                <li>🛍️ Administrar el carrito de compras.</li>
-                <li>🎉 Recibir promociones y ofertas.</li>
+                <li>Comprar productos fácilmente.</li>
+                <li>Guardar productos favoritos.</li>
+                <li>Consultar el historial de compras.</li>
+                <li>Administrar el carrito de compras.</li>
+                <li>Recibir promociones y ofertas.</li>
               </ul>
             </Card.Body>
           </Card>
