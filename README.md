@@ -93,7 +93,7 @@ Se eligió la combinación nativa de React **useContext + useReducer** por las s
 
 ## Enlace de Visualización
 
-Sitio desplegado en Netlify: 
+Sitio desplegado en Netlify: https://dwtarea3.netlify.app/
 
 ---
 
