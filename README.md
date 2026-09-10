@@ -6,7 +6,7 @@ y manejo de estado para la interactividad.
 
 ## Enlace de Visualizacion
 
-Sitio desplegado en Netlify:
+Sitio desplegado en Netlify: https://dwhojatrabajo4.netlify.app/
 
 ## Descripción de los componentes
 
