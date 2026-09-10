@@ -25,7 +25,7 @@ const FooterComponent = () => {
               <span className="text-warning">Componentes desarrollados:</span>
             </p>
             <p className="text-secondary small">
-              Navbar • Footer • Inicio • Productos • DetalleProducto • Carrito • InicioSesión • RegistroUsuario
+              Navbar • Footer • Inicio • Productos • DetalleProducto • Carrito • InicioSesión • RegistroUsuario • Perfil • AuthContext (useReducer)
             </p>
           </Col>
         </Row>
