@@ -1,4 +1,4 @@
-# Hoja de Trabajo 4 - Excursión al Lago de Atitlán
+# Descripcion
 
 Migración de un sitio web estático de excursiones turísticas a un proyecto
 modular basado en **React** con **Vite**, aplicando componentes reutilizables
