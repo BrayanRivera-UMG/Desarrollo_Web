@@ -141,6 +141,19 @@ npm start
 
 ---
 
+## Seguridad y Expiración de Sesión (Tarea 5)
+
+### Backend
+La expiración del token JWT está configurada a **5 minutos** mediante la variable de entorno `JWT_EXPIRES_IN=5m`. El middleware `proteger` captura el `TokenExpiredError` de la librería `jsonwebtoken` y responde con un JSON descriptivo con estado HTTP `401 Unauthorized`.
+
+### Frontend
+El cliente HTTP (`axios`) cuenta con un **interceptor de respuestas**. Cuando detecta un error `401` (que no sea del login), automáticamente:
+1. Elimina el token y el usuario del `localStorage`.
+2. Redirige al usuario a `/inicio-sesion`.
+3. Muestra un `Alert` de React-Bootstrap indicando que la sesión ha expirado.
+
+---
+
 > [!NOTE]
 > * Las contraseñas se encriptan con bcryptjs antes de guardarse.
 > * La autenticación usa tokens JWT con expiración de 30 días.
